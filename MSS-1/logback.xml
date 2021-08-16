@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true" > <!-- scan="true" scanPeriod="300 seconds"> -->
+    <appender name="LogFile"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>../ITGLogs/Logs.log</File>
+        <encoder>
+            <pattern>%d{MM-dd-yyyy HH:mm:ss} %-5level %logger{36} (%line\) : %m%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../logs/backup/sdmLogs.%d{yyyy-MM-dd_HH}.log.zip</fileNamePattern>
+			<!-- keep 65 days worth of history -->
+            <maxHistory>1560</maxHistory>
+        </rollingPolicy>
+    </appender>
+	<logger name="com.example.spring1" level="TRACE" />
+    <logger name="org.springframework.jdbc" level="TRACE" />
+	 <root level="WARN">
+        <appender-ref ref="LogFile" />
+    </root>
+</configuration>	

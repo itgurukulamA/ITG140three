@@ -1,0 +1,40 @@
+02-23-2021 16:00:39 DEBUG o.s.jdbc.core.JdbcTemplate (711) : Executing prepared SQL query
+02-23-2021 16:00:39 DEBUG o.s.jdbc.core.JdbcTemplate (643) : Executing prepared SQL statement [select id from projects where id ='3']
+02-23-2021 16:00:39 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:00:39 DEBUG o.s.jdbc.core.JdbcTemplate (440) : Executing SQL query [select createdby from projects where id ='3']
+02-23-2021 16:00:39 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:00:39 DEBUG o.s.jdbc.core.JdbcTemplate (440) : Executing SQL query [select count(fname) from contacts where fname='Vennela']
+02-23-2021 16:00:39 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:00:39 DEBUG o.s.jdbc.core.JdbcTemplate (440) : Executing SQL query [select createdby from projects where id ='3']
+02-23-2021 16:00:39 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:00:39 DEBUG o.s.jdbc.core.JdbcTemplate (958) : Executing prepared SQL update
+02-23-2021 16:00:39 DEBUG o.s.jdbc.core.JdbcTemplate (643) : Executing prepared SQL statement [insert into resource (pid,employeeName,manager,Status) values (?,?,?,?)]
+02-23-2021 16:00:39 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:00:39 TRACE o.s.jdbc.core.StatementCreatorUtils (221) : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+02-23-2021 16:00:39 TRACE o.s.jdbc.core.StatementCreatorUtils (221) : Setting SQL statement parameter value: column index 2, parameter value [Vennela], value class [java.lang.String], SQL type unknown
+02-23-2021 16:00:39 TRACE o.s.jdbc.core.StatementCreatorUtils (221) : Setting SQL statement parameter value: column index 3, parameter value [krishna], value class [java.lang.String], SQL type unknown
+02-23-2021 16:00:39 TRACE o.s.jdbc.core.StatementCreatorUtils (221) : Setting SQL statement parameter value: column index 4, parameter value [Not-Assigned], value class [java.lang.String], SQL type unknown
+02-23-2021 16:00:39 TRACE o.s.jdbc.core.JdbcTemplate (967) : SQL update affected 1 rows
+02-23-2021 16:02:28 DEBUG o.s.jdbc.core.JdbcTemplate (711) : Executing prepared SQL query
+02-23-2021 16:02:28 DEBUG o.s.jdbc.core.JdbcTemplate (643) : Executing prepared SQL statement [select id from projects where id ='3']
+02-23-2021 16:02:28 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:02:28 DEBUG o.s.jdbc.core.JdbcTemplate (440) : Executing SQL query [select createdby from projects where id ='3']
+02-23-2021 16:02:28 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:02:28 DEBUG o.s.jdbc.core.JdbcTemplate (440) : Executing SQL query [select count(fname) from contacts where fname='indu']
+02-23-2021 16:02:28 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:02:28 DEBUG o.s.jdbc.core.JdbcTemplate (440) : Executing SQL query [select createdby from projects where id ='3']
+02-23-2021 16:02:28 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:02:28 DEBUG o.s.jdbc.core.JdbcTemplate (958) : Executing prepared SQL update
+02-23-2021 16:02:28 DEBUG o.s.jdbc.core.JdbcTemplate (643) : Executing prepared SQL statement [insert into resource (pid,employeeName,manager,Status) values (?,?,?,?)]
+02-23-2021 16:02:28 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:02:28 TRACE o.s.jdbc.core.StatementCreatorUtils (221) : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+02-23-2021 16:02:28 TRACE o.s.jdbc.core.StatementCreatorUtils (221) : Setting SQL statement parameter value: column index 2, parameter value [indu], value class [java.lang.String], SQL type unknown
+02-23-2021 16:02:28 TRACE o.s.jdbc.core.StatementCreatorUtils (221) : Setting SQL statement parameter value: column index 3, parameter value [krishna], value class [java.lang.String], SQL type unknown
+02-23-2021 16:02:28 TRACE o.s.jdbc.core.StatementCreatorUtils (221) : Setting SQL statement parameter value: column index 4, parameter value [Not-Assigned], value class [java.lang.String], SQL type unknown
+02-23-2021 16:02:28 TRACE o.s.jdbc.core.JdbcTemplate (967) : SQL update affected 1 rows
+02-23-2021 16:24:17 DEBUG o.s.jdbc.core.JdbcTemplate (711) : Executing prepared SQL query
+02-23-2021 16:24:17 DEBUG o.s.jdbc.core.JdbcTemplate (643) : Executing prepared SQL statement [select id from projects where id ='30']
+02-23-2021 16:24:17 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource
+02-23-2021 16:25:45 DEBUG o.s.jdbc.core.JdbcTemplate (711) : Executing prepared SQL query
+02-23-2021 16:25:45 DEBUG o.s.jdbc.core.JdbcTemplate (643) : Executing prepared SQL statement [select id from projects where id ='30']
+02-23-2021 16:25:45 DEBUG o.s.jdbc.datasource.DataSourceUtils (115) : Fetching JDBC Connection from DataSource

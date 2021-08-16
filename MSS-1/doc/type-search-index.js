@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.example.project","l":"Mss1Application"},{"p":"com.example.project.spring1","l":"Student"},{"p":"com.example.project.spring1","l":"StudentController"},{"p":"com.example.project.spring1","l":"StudentService"}];updateSearchResults();
