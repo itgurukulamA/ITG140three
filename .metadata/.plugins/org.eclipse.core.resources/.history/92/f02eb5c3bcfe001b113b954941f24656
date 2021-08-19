@@ -1,0 +1,47 @@
+package com.example.demo.Jdbcpojo.njdbc;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.stereotype.Service;
+
+@Service
+public class NamedjdbcServices {
+	
+@Autowired
+NamedParameterJdbcTemplate njdbc;
+
+@Autowired
+private NamedparameterJdbcTemplate njdbc;
+public Map<String,String> insert ece (Njdbc jdbc) {
+	Map<String,String> data=new HashMap<String,String>();
+	int result=0;
+	String sql="INSERT INTO ece(id,name,age,college) VALUES (:Id,:Name,:Age,:College)";
+	try
+	{
+	
+        sqlparameterSource parameters =new MapsqlParameterSource()
+        		.addvalue("Id",jdbc.getId())
+        		.addvalue("Name",jdbc.getName())
+        		.addvalue("age",jdbc.getAge())
+        		.addValue("College",jdbc.getCollege());
+        		
+        		result=NamedParameterJdbcTemplate.update(sql,parameters);
+		 if(result>0)
+		 {
+			 data.put("success","Record inserted successfully");
+			 else 
+				 data.put("failed", "Record failed to insert, plaese try again");
+		 } catch (Exception e) {
+			 data.put("Error occured,plaese try again");
+		 }
+		 
+		 
+			 return data;
+		 
+			
+}
+
+

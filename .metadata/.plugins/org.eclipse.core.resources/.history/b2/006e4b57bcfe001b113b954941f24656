@@ -1,0 +1,17 @@
+package com.example.demo.Jdbcpojo.njdbc;
+
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+
+public class NamedjdbcControllers {
+            NamedjdbcServices njs;
+            
+            
+        	public String insert1 (@RequestBody Njdbc jk) {
+        		String n=njs.insert(jk);
+        		return n;
+}
+}

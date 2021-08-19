@@ -1,0 +1,32 @@
+package com.example.demo.Update;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class UpdateServices {
+@Autowired
+
+JdbcTemplate jdbcTemplate;
+public String insert (Update cd) {
+	String s="insert into ece(id,name,age,college)values(?,?,?,?)";
+	int n= jdbcTemplate.update(s,cd.getId(),cd.getName(),cd.getAge(),cd.getCollege());
+	if (n>0) {
+		return "data inserted successfully";
+	}else {
+		return "data not inserted";
+	
+	}
+}
+
+public String update(Update cd) {
+	String s1="Update ece SET name=? WHERE id=?";
+	int b=jdbcTemplate.update(s1,cd.getName(),cd.getId());
+	if (b>0) {
+		return "data inserted successfully";
+	}else {
+		return "data not inserted";
+	
+		
+	}
+}	
+}

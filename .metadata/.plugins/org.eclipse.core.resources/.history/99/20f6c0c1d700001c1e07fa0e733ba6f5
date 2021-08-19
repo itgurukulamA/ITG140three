@@ -1,0 +1,14 @@
+package lists;
+
+public class ArrayList {
+	public static void main(String[] args) {
+		
+				ArrayList<string> colors = new ArrayList<string>();
+		colors.add("Red");
+		colors.add("Blue");
+		colors.add(0,"Yellow");
+		System.out.println(colors);
+		}
+		}
+
+

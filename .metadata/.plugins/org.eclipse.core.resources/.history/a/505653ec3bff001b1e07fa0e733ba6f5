@@ -1,0 +1,22 @@
+package example.strings;
+
+public class Commcharof2 {
+	public void main (String args[]) {
+	String a= "bhuvana";
+	String b= "harika";
+	
+	
+	
+	for(int i=0;i<a.length();i++){
+        for (int j = 0; j < b.length(); j++) {
+           if(a.charAt(i) == b.charAt(j)){
+               a.add(b.charAt(i)+"");
+           }
+     }
+    }
+
+     System.out.println(a);
+ }
+}
+
+

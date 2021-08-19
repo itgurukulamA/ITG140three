@@ -1,0 +1,18 @@
+package lists;
+
+import java.util.ArrayList;
+
+class Iterator {
+public static void main(String args[]) {
+	ArrayList <String> colors= new ArrayList <String>();
+	colors.add("Green");
+	colors.add("Blue");
+	colors.add("Pink");
+	colors.add("Black");
+	colors.add("Red");
+	// (String element : colors) {
+System.out.println(colors);
+
+}
+}
+

@@ -1,0 +1,16 @@
+package exceptions;
+
+public class multry {
+	public static void main (String args[]) {
+  try {
+	int a= 67;
+	int b= 456;
+	int c= a/b;
+  }
+  catch (Exception e) {
+  System.out.println(e);
+	  
+  }
+
+}
+}

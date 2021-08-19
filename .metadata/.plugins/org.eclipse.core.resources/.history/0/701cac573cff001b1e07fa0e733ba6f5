@@ -1,0 +1,26 @@
+package example.strings;
+
+import java.util.Scanner;
+
+public class Commcharof2 {
+	public static void main (String args[]) {
+	
+	Scanner bhu= new Scanner (System.in);
+	System.out.println("Enter a string1");
+	String str1= bhu.next();
+	System.out.println("Enter a String2");
+	String str2= bhu.next();
+	for(int i=0;i<=str1.length()-1;i++)
+	{
+		for(int j=0;i<=str2.length()-1;i++)
+		{
+			if(str1.charAt(i)==str2.charAt(j))
+			{
+				System.out.println(str1.charAt(i));
+			}
+		}
+	}
+	}
+}
+
+
