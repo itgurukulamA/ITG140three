@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="loggers-1"/>
+<aop-project name="loggers"/>
+<aop-project name="RestAssured"/>
+</aop-reference-model>

@@ -1,0 +1,41 @@
+package com.example.demo.Crud;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Controllerclass {
+	@Autowired
+	Pojoclass crud;
+@PostMapping("/itg")
+	
+	public String additems(@RequestBody Item item )
+	{
+		return crud.additem(item);
+		
+	}
+	
+	@DeleteMapping("/item")
+	public String deleteitems(@RequestBody Item item)
+	{
+		return crud.deleteItem(item);
+				
+	}
+	@PutMapping("/item")
+	public String updateitems(@RequestBody Item item)
+	{
+		return crud.update(item);
+	}
+	@GetMapping("/item")
+	public List<Item> select1(@RequestBody Item item)
+	{
+		return crud.select(item);
+	}
+	
+
+}

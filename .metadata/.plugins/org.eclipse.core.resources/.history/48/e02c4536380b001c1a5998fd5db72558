@@ -1,0 +1,26 @@
+package com.example.demo.AOP;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+
+public class AdviceAspect {
+	
+	@After(value= "execution(* com.example.demo.AOP.AspectService.*(..))")
+	public void beforeAdvice(JoinPoint joinPoint,Aspect as)
+	{
+	System.out.println("Before method:"); 
+
+	}	
+	@After(value = "execution(* com.aop.demo.AOP.AspectService.*(..))")
+	public void afterAdvice(JoinPoint joinPoint) {
+		System.out.println("after Method: " + joinPoint.getSignature());
+			}
+		
+
+}

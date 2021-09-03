@@ -1,0 +1,48 @@
+package com.example.demo.Student;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import jdk.internal.org.jline.utils.Log;
+
+@RestController
+public class StudentController {
+@Autowired StudentService ss;
+@PostMapping("/insert")
+public String insert(@RequestBody Student s)
+{
+ int i = ss.insert(s);
+ if (i > 0)
+ {
+	 Log.info("inserted")
+   return "Data inserted";
+ }
+ else
+ {
+	 Log.info("not inserted");
+   return "Data insertion failed";
+ }
+}
+@PostMapping("/insertion")
+public Map<String, String> insertparam(@RequestBody Student s)
+{
+ Map<String, String> i = ss.insertparam(s);
+ return (i);
+}
+@GetMapping("/selection")
+public List selection()
+{
+return ss.selection();
+}
+@GetMapping("/selectone")
+public List selectone(@RequestBody Student s)
+{
+return ss.selectone(s.getId());
+}
+}

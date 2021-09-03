@@ -1,0 +1,44 @@
+package com.example.demo.Student;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Service;
+
+@Service
+public class StudentService {
+	@Autowired JdbcTemplate jt;
+	public int insert(Student s)
+	 {
+	   String sql = "insert into student values(?,?,?)";
+	   int id = s.getId();
+	   String name =s.getName();
+	   String email = s.getEmail();
+	   return jt.update(sql,id,name,email);
+	}
+	public Map<String, String> insertparam(Employee emp)
+	{
+	 Map<String, String> m = new HashMap<String, String>();
+	 int result = 0;
+	 try  
+	 {
+	  String sql = "insert into mss(id,name,age,phno,email,desig,salary) values(:id,:name,:age,:phno,:email,:desig,:salary)";
+	   SqlParameterSource parameters = new MapSqlParameterSource().addValue("id", emp.getId())
+	    .addValue("name", emp.getName())
+	    .addValue("age",emp.getAge())
+	    .addValue("phno",emp.getPhno())
+	    .addValue("email",emp.getEmail())
+	    .addValue("desig", emp.getDesig())
+	    .addValue("salary",emp.getSalary());
+	     result = namedjdbc.update(sql, parameters);
+	     if (result > 0)
+	     {
+	      log.info("success");
+	      m.put("Success", "Data inserted successfully");
+	     }
+	     else
+	     {
+	      log.info("Fail");
+	      m.put("failed", "Data insertion failed");
+	     }
+	  }
+}

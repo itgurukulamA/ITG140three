@@ -1,0 +1,15 @@
+package com.example.demo.Crud;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+
+public class CrudService {
+	@Autowired
+	Crudapi crud;
+	public String additem(Crudapi capi) {
+		String sql ="insert into itg(id,name,age,phno,mail) values(?,?,?,?,?)" ;
+		int result = crud.update(sql,Crudapi.getId(),
+	}
+}

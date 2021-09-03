@@ -1,0 +1,18 @@
+package com.example.demo.AOP;
+
+import org.aspectj.lang.JoinPoint;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+public class AdviceAspect {
+	@Before(value = "execution(* com.example.demo.AOP.AspectService.*(..)) and args()")
+	public void afterAdvice(JoinPoint joinPoint,Aspect a) {
+		System.out.println("after Method: "+joinPoint.getSignature());
+			}
+		
+
+}

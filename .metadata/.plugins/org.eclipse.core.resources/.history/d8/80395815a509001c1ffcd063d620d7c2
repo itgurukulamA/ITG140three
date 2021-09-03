@@ -1,0 +1,29 @@
+package com.example.demo.Crud;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CrudController {
+	@Autowired
+	CrudService crud;
+	@PostMapping("/itg")
+	public String addCrudapi(@RequestBody Crudapi capi )
+	{
+		int i= crud.add(capi);
+		if(i>0)
+		{
+			return "dta inserted successfully";
+		}
+		else 
+		{
+			return "data not inserted";
+		}
+		
+		
+	}
+	
+	
+}

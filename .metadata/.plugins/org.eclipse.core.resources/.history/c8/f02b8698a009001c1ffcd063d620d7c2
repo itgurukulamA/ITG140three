@@ -1,0 +1,24 @@
+package com.example.demo.Crud;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+
+public class CrudService {
+	@Autowired
+	Crudapi crud;
+	public String additem(Item item) {
+		String sql ="insert into mes1(itemname,itemdescription,itemprice) values(?,?,?)" ;
+		int result = crud.update(sql,item.getItemname(),item.getItemdescription(),item.getItemprice());
+		// TODO Auto-generated method stub
+		if (result<0)
+		
+			return "Failed" ;
+		
+		else
+		return "success"; 
+	}
+	}
+
+}

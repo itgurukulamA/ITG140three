@@ -1,0 +1,19 @@
+package com.example.demo;
+
+
+import org.springframework.boot.test.context.SpringBootTest;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+@SpringBootTest
+class RestAssuredApplicationTests {
+
+	@Test
+	void contextLoads() {
+		RestAssured.baseURI = "http://localhost:8080";
+		RestAssured.given().get("/itemdata").then().statusCode(200).log().body();
+		System.out.println("ok");
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.example.demo.AspectDemo;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class AspectService {
+public AspectDemo aspectdemo(AspectDemo ad)
+{
+	
+}
+}

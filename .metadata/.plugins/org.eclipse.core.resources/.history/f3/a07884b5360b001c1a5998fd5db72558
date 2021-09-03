@@ -1,0 +1,15 @@
+package com.example.demo.AOP;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class AspectService {
+	public Aspect createAspect(Aspect ap)
+	{
+	System.out.println("Aspect done");
+	return ap;
+	}
+	}
+
+

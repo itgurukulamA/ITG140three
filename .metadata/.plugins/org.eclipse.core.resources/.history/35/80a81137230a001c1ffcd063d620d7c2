@@ -1,0 +1,22 @@
+package com.example.demo.Student;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class StudentController {
+@Autowired StudentService ss;
+public String insert(@RequestBody Student s)
+{
+ int i = es.insert(emp);
+ if (i > 0)
+ {
+   return "Data inserted successfully";
+ }
+ else
+ {
+   return "Data insertion failed";
+ }
+}
+
+}
